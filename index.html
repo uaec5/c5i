@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanderWorld - Travel Destination</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loading-screen">
+    <div class="loader"></div>
+  </div>
+
+  <header>
+    <h1>WanderWorld</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to WanderWorld</h2>
+    <p>Discover the most amazing travel destinations around the world!</p>
+    <img src="images/travel.jpg" alt="Travel">
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>WanderWorld is your ultimate travel guide. We help you explore unique places and hidden gems worldwide.</p>
+  </section>
+
+  <section id="destinations">
+    <h2>Top Destinations</h2>
+    <input type="text" id="searchDestinations" placeholder="Search destinations...">
+    <div class="destination-cards">
+      <div class="card" data-city="Paris">
+        <img src="images/paris.jpg" alt="Paris">
+        <h3>Paris</h3>
+        <p>The City of Light featuring the iconic Eiffel Tower</p>
+      </div>
+      <div class="card" data-city="Tokyo">
+        <img src="images/tokyo.jpg" alt="Tokyo">
+        <h3>Tokyo</h3>
+        <p>A blend of modern technology and traditional culture</p>
+      </div>
+      <div class="card" data-city="New York">
+        <img src="images/travel.jpg" alt="New York">
+        <h3>New York</h3>
+        <p>The city that never sleeps</p>
+      </div>
+    </div>
+
+    <div class="map-container">
+      <h3>Visit Paris</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.95410694685!2d2.2646356!3d48.8588377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sus!4v1650458531404!5m2!1sen!2sus"
+        width="100%"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="video-container">
+      <h3>Paris City Tour</h3>
+      <iframe
+        width="100%"
+        height="450"
+        src="https://www.youtube.com/embed/AQ6GmpMu5L8"
+        title="Paris City Tour"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="gallery-images">
+      <img src="images/paris.jpg" alt="Paris">
+      <img src="images/tokyo.jpg" alt="Tokyo">
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>Travel Tips & FAQ</h2>
+    <details>
+      <summary>Best Time to Visit Paris</summary>
+      <p>The best time to visit Paris is from June to August and September to October. Both summer and fall have its ups and downs. From June to August the weather in Paris is just about perfect.</p>
+    </details>
+    <details>
+      <summary>Transportation in Tokyo</summary>
+      <p>Tokyo's public transportation system is one of the most efficient in the world. The metro and JR trains cover most of the city, and you can use a prepaid IC card for easy payment.</p>
+    </details>
+    <details>
+      <summary>Travel Insurance Tips</summary>
+      <p>Always get comprehensive travel insurance that covers medical emergencies, trip cancellations, and lost luggage. Read the fine print and ensure your activities are covered.</p>
+    </details>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 WanderWorld. All rights reserved.</p>
+    <button id="themeToggle">Toggle Dark Mode</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
